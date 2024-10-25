@@ -7,6 +7,8 @@ if min(caffeine_vol)>K:
 
 # print(caffeine_vol)
 status=[[[0,0]for i in range(N)]]
+min_cup=N
+found=0
 for n in range(1,K+1):
     status_N=[]
     candidate_K=[K+1,N]
@@ -48,17 +50,15 @@ for n in range(1,K+1):
             else:
                 status_K=status[n-1][k-1]
 
-                
+        if n==K and status_K[0]==0 and status_K[1]<min_cup:
+            found=1
+            min_cup=status_K[1]
         status_N.append(status_K)
     status.append(status_N)
 print(caffeine_vol)
 for line in status:
     print(line)
 
-ans_candidate=[]
-for remain, cups in status[-1]:
-    if remain==0:
-        ans_candidate.append(cups)
-if not ans_candidate:
+if not found:
     print(-1)
-else:print(min(ans_candidate))
+else:print(min_cup)
