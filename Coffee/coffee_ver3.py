@@ -1,6 +1,6 @@
 N, K = map(int, input().split())
-if K==0:
-    print(0)
+# if K==0:
+#     print(0)
 caffeine_vol=list(map(int, input().split()))
 min_cup=101
 status=[[0 for i in range(N)]]
@@ -28,5 +28,6 @@ for n in range(1,K+1):
     status.append(status_N)
 if min(status[-1])==101:
     print(-1)
+elif K==0: print(0)
 else: print(min(status[-1]))
 #newCoffee=[n-caffeine_vol[k]-(n-caffeine_vol[k]-status[n-caffeine_vol[k]][k-1][0]),status[n-caffeine_vol[k]][k-1][1]+1]
