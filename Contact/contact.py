@@ -33,7 +33,7 @@ for i in range(N):
             flag=0
             # print("1")
         
-        if parts.count('0')>1 and parts[-1]=='1':
+        if parts.count('0')>1 and parts[-1]=='1' and parts[0]=='1':
             flag=0
             # print("2")
         if flag==1:
@@ -42,7 +42,7 @@ for i in range(N):
             
         
     # print(partDone)
-    # print(partDone)
+    print(partDone)
     if flag==0:
         print("YES")  
     else: print("NO")
