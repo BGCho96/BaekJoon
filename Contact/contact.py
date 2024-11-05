@@ -42,7 +42,7 @@ for i in range(N):
             
         
     # print(partDone)
-    print(partDone)
+    # print(partDone)
     if flag==0:
         print("YES")  
     else: print("NO")
