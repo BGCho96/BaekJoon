@@ -1,9 +1,1 @@
-1 0
-0
-amswer 1
-1 2
-2
-amswer 3
-2 1
-1
-amswer 4
+608
