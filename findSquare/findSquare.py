@@ -26,7 +26,7 @@ while numbers:
                 if (startY + m*increment) % 1 == 0 and (startY + m*increment)<M:
                     numList.append(box[x][int(startY + m*increment)])
                 increment+=1
-        print(numList)
+        # print(numList)
         inverseNumList=list(reversed(numList))
         for i in range(1,len(numList)):
             if (len(numList)-1)%i == 0 :
@@ -39,7 +39,3 @@ while numbers:
                 if math.sqrt(numList[0])%1 == 0 and numList[0] > answer :
                     answer = numList[0]
 print(answer)
-
-                
-
-                
