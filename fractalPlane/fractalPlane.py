@@ -31,6 +31,6 @@ for i in range(R1,R2+1):
         innerLine.append(ink)
     # test.append(innerLine)
     print(''.join(map(str,(innerLine))))
-# print(test
+# print(test)
                 
 
